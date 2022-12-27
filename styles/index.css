@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #111;
+    min-height: 100vh;
+}
+
+.game-container {
+    background: black;
+    position: relative;
+    padding: 2px;
+    border: 4px solid white;
+    border-radius: 8px;
+}
+
+.score-container {
+    top: 0.3em;
+    position: absolute;
+    display: flex;
+    color: white;
+    font-family: 'Open Sans', cursive;
+    font-size: 4em;
+    justify-content: center;
+    width: 100%;
+    user-select: none;
+}
+
+#left-player-score {
+    margin-right: 2em;
+}
+
+.controls-container {
+    height: 45px;
+    width: 400px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-button {
+    color: white;
+    font-family: "Segoe UI", "Open Sans", monospace;
+    font-size: 1.2em;
+    padding: 7px 14px;
+    outline: none;
+    background: #000000;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: all 0.2s;
+    cursor: pointer;
+    flex: 1
+}
+
+.control-button:hover {
+    background: #222;
+}
+
+.control-button:active {
+    background: white;
+    color: black;
+    box-shadow: 0 0 0 4px rgb(255,255,255,0.4);
+}

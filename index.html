@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Pong</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="game-container">
+            <div class="score-container">
+                <div id="left-player-score">0</div>
+                <div id="right-player-score">0</div>
+            </div>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="controls-container">
+            <button id="state-button" class="control-button" type="button">START</button>
+            <button id="restart-button" class="control-button" type="button">RESTART</button>
+        </div>
+
+    </div>
+    <script src="scripts/index.js" type="module" defer></script>
+</body>
+</html>
